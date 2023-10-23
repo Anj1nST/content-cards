@@ -23,12 +23,8 @@ const Card: React.FC<ICard> = ({ img, title, name, price, tags, location }) => {
       <div className="card-contentContainer">
         <h3 className="card-title">{title}</h3>
         <div className="card-nameContainer">
-          <h3 className="card-name">
-            <b>{name}</b>
-          </h3>
-          <h3 className="card-price">
-            <b>{price}</b>
-          </h3>
+          <h3 className="card-name">{name}</h3>
+          <h3 className="card-price">{price}</h3>
         </div>
         <ul className="card-tags">
           {tags.map((tag: string) => {
